@@ -1,0 +1,610 @@
+header{
+     height: 300px;
+     width: 95%;
+     background: url("../images/lyon.jpg");
+     border-radius: 40px;
+     margin-top: 50px;
+    margin-left: 2.5%;
+}
+
+h1{
+    height: 100px;
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    font-size: 5em;
+    padding-top: 50px;
+    margin-right: 5%;
+    margin-left: 5%;
+    color: white;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+figcaption p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    
+}
+
+.bienvenue{
+  text-align: center; 
+    font-size: 2.2em;
+    color: white;
+    font-weight:bold;
+}
+
+#one{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: rgb(255, 124, 124);
+    margin-left: 30%;
+    margin-top: 50px; 
+    z-index: 1000;
+    opacity: 1;
+}
+
+
+#two{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: rgb(255, 193, 124);
+    margin-left: 35%;
+    margin-top: -516px;
+    z-index: 3;
+    opacity: 0.4;
+}
+
+#three{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: rgb(208, 247, 131);
+    margin-left: 40%;
+    margin-top: -516px;
+    z-index: 2;
+    opacity: 0.4;
+}
+
+#four{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: rgb(196, 239, 255);
+    margin-left: 45%;
+    margin-top: -516px;
+    z-index: 1; 
+    opacity: 0.4;
+}
+
+body{
+    background: white;
+}
+
+#rightButton, #leftButton{
+    position: relative;
+    width: 0px;
+    height: 0px;
+    margin: 30px;
+    background-color: white;
+    border: 0px;
+}
+
+#leftButton{
+    float: left;
+    margin-left: 48%;
+}
+
+.fas.fa-arrow-circle-left, .fas.fa-arrow-circle-right{
+    position: absolute;
+    top: -20px;
+    left: -20px;
+}
+
+            /*------------------------------------1------------------------------------*/
+            #one .supLeftTriangle{
+
+            }
+
+            #one .supRightTriangle{
+                position: absolute;
+                right: 0;
+                width: 0;
+                height: 0px;
+                border-top: 0px solid white;
+                border-left: 500px solid transparent;
+            }
+
+
+            #one .infRightTriangle{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 0%;
+                height: 0px;
+                border-bottom: 0px solid white;
+                border-left: 500px solid transparent;
+            }
+
+
+            #one .infLeftTriangle{
+
+            }
+            /*  étant donné que la div une ne se retrouvra jamais à droite de la diapo centrale(car il sera soit au centre soit à gauche) il n'est pas nécessaire de mettre des triangle superieur et inférieur gauche   */
+            /*-------------------------------------1--------------------------------------------*/
+
+
+
+
+            /*-------------------------------------2---------------------------------------------*/
+            #two .supLeftTriangle{
+                position: absolute;
+                top:0;
+                width: 0;
+                height: 0;
+                border-top: 70px solid white;
+                border-right: 500px solid transparent;
+            }
+
+            #two .supRightTriangle{
+                position: absolute;
+                right: 0;
+                width: 0;
+                height: 0px;
+                border-top: 0px solid white;
+                border-left: 500px solid transparent;
+            }
+
+
+            #two .infRightTriangle{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 0%;
+                height: 0px;
+                border-bottom: 0px solid white;
+                border-left: 500px solid transparent;
+            }
+
+
+            #two .infLeftTriangle{
+                position: absolute;
+                bottom: 0;
+                width: 0;
+                height: 0;
+                border-bottom: 70px solid white;
+                border-right: 500px solid transparent;
+            }
+            /*-------------------------------------2---------------------------------------------*/
+
+
+
+
+            /*-------------------------------------3---------------------------------------------*/
+            #three .supLeftTriangle{
+                position: absolute;
+                top:0;
+                width: 0;
+                height: 0;
+                border-top: 70px solid white;
+                border-right: 500px solid transparent;
+            }
+
+            #three .supRightTriangle{
+                position: absolute;
+                right: 0;
+                width: 0;
+                height: 0px;
+                border-top: 0px solid white;
+                border-left: 500px solid transparent;
+            }
+
+
+            #three .infRightTriangle{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 0%;
+                height: 0px;
+                border-bottom: 0px solid white;
+                border-left: 500px solid transparent;
+            }
+
+
+            #three .infLeftTriangle{
+                position: absolute;
+                bottom: 0;
+                width: 0;
+                height: 0;
+                border-bottom: 70px solid white;
+                border-right: 500px solid transparent;
+            }
+            /*-------------------------------------3---------------------------------------------*/
+
+
+
+            /*-------------------------------------4---------------------------------------------*/
+            #four .supLeftTriangle{
+                position: absolute;
+                top:0;
+                width: 0;
+                height: 0;
+                border-top: 70px solid white;
+                border-right: 500px solid transparent;
+            }
+
+            #four .supRightTriangle{
+                position: absolute;
+                right: 0;
+                width: 0;
+                height: 0px;
+                border-top: 0px solid white;
+                border-left: 500px solid transparent;
+            }
+
+
+            #four .infRightTriangle{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 0%;
+                height: 0px;
+                border-bottom: 0px solid white;
+                border-left: 500px solid transparent;
+            }
+
+
+            #four .infLeftTriangle{
+                position: absolute;
+                bottom: 0;
+                width: 0;
+                height: 0;
+                border-bottom: 70px solid white;
+                border-right: 500px solid transparent;
+            }
+            /*-------------------------------------4---------------------------------------------*/
+figure > img{
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 80%;
+    height: 60%;
+    border: solid white;
+    border-radius: 10px;
+    
+}
+
+.imgDeDiapo1{
+    box-shadow: 10px 10px 3px rgb(255, 79, 79);
+}
+
+.imgDeDiapo2{
+    box-shadow: 10px 10px 3px rgb(255, 182, 73);
+}
+
+.imgDeDiapo3{
+    box-shadow: 10px 10px 3px rgb(154, 247, 128);
+}
+
+.imgDeDiapo4{
+    box-shadow: 10px 10px 3px rgb(155, 231, 255);
+}
+
+.hr1{
+    background: rgb(255, 79, 79);
+    box-shadow: 3px 3px 3px rgb(255, 79, 79);
+}
+
+.hr2{
+    background: rgb(255, 182, 73);
+    box-shadow: 3px 3px 3px rgb(255, 182, 73);
+}
+
+.hr3{
+    background: rgb(154, 247, 128);
+    box-shadow: 3px 3px 3px rgb(154, 247, 128);
+}
+
+.hr4{
+    background: rgb(155, 231, 255);
+    box-shadow: 3px 3px 3px rgb(155, 231, 255);
+}
+
+
+hr{
+    width: 70%;
+    height: 2px;
+    border: none;
+}
+
+
+
+figcaption{
+    text-align: center;
+}
+        
+#resevartion{
+    
+    height: 500px;
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#map{
+    float: left;
+    width: 600px;
+    height: 500px;
+    border-radius: 10px;
+    margin-right: 100px;
+}
+
+#reservationCard{
+    position: relative;
+    width: 600px;
+    height: 500px;
+    float: left;
+    border-radius: 10px;
+    background: rgb(150, 228, 255);
+    position: relative;
+    z-index: 3;
+}
+
+
+
+#indicateur{
+    display: block;
+    padding-top: 50px;
+    font-size: 1.5em;
+    width: 90%;
+    height: 100px;
+    margin-top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    background: rgb(96, 202, 255);
+    box-shadow: 5px 5px 5px rgba(255, 255, 255,0.9);
+    
+}
+
+#indicateurImage{
+    cursor: pointer;
+}
+
+#name{
+    font-family: 'Roboto', sans-serif;
+    width: 80%;
+    color: rgb(255, 158, 40);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.stationText{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.2em;
+    margin-left: 0%;
+    line-height: 50px;
+    text-align: left;
+    list-style-type: none;
+}
+
+#adress{
+    line-height: 25px;
+    
+}
+
+#reserve{
+    display: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    background: rgb(255, 158, 40);
+    border-radius: 10px;
+    width: 80%;
+    height: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 2px white;
+}
+
+
+.back1{
+    display: none;
+    position: absolute;
+    height: 30px;
+    left: 5px;
+    bottom: 5px;
+    border: none;
+    border-radius: 10px;
+    background: rgb(255, 158, 40);
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px white;
+}
+
+canvas{
+    opacity: 0;
+    background: white;
+    float: left;
+    border: solid;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    z-index:0;
+    position: absolute;
+    left:140px;
+    top: 215px;
+   
+}
+
+
+#clear{
+    display: none;
+    border-radius: 10px;
+    margin: 5px;
+    margin-left: 80%;
+    background: rgb(255, 158, 40);
+    color: white;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px white;
+    float: left;
+}
+
+#signBefore{
+    display:none;
+    color: white;
+    font-size: 1.2em;
+    margin-left: 40px;
+}
+
+#signUp{
+    display: none;
+}
+
+#reserveTheBike{
+    display: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    background: rgb(255, 158, 40);
+    border-radius: 10px;
+    width: 81%;
+    height: 15%;
+    margin-left: 10%;
+    margin-top: 130px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px white;
+    float: left;
+}
+
+#back2{
+    display: none;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background: rgb(255, 158, 40);
+    color: white;
+    position: absolute;
+    height: 30px;
+    left: 5px;
+    bottom: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px white;
+}
+
+#reservedMsg{
+    display: none;
+    color: white;
+    margin-left: 8%;
+    margin-right: 8%;
+    font-size: 1.2em;
+}
+
+#back3{
+    display: none;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background: rgb(255, 158, 40);
+    color: white;
+    position: absolute;
+    height: 30px;
+    left: 5px;
+    bottom: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px white;
+}
+
+#cancel{
+    display: none;
+    border-radius: 10px;
+    margin: 5px 5px 15px 5px;
+    background: rgb(255, 94, 94);
+    color: white;
+    width: 90%;
+    height: 60px;
+    margin-left: 5%;
+    font-size: 2.5em;
+    border: none;
+    cursor: pointer;
+}
+
+#otherStation{
+    display: none;
+    border-radius: 10px;
+    margin: 5px;
+    background: rgb(255, 158, 40);
+    color: white;
+    width: 90%;
+    height: 15%;
+    margin-left: 5%;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px white;
+}
+
+
+footer{
+    float: left;
+    background: rgb(255, 158, 40);
+    margin-top: 100px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+}
+
+#reservationStatus{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    margin-left: 20px;
+    color:white;
+}
+
+#reservationStatus1,#reservationStatus2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    margin-left: 20px;
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

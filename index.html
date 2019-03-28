@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        
+        <meta charset="utf-8"/>
+        <meta name="description" content="Le meilleur site pour réserver un vélo à lyon ? c'est ici ..." />
+        <meta name="keywords" content="vélo,Vélo'v,lyon,Lyon,Vélo lyon,lyon vélo">
+        <link rel="stylesheet" type="text/css" href="css/veloV.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Russo+One" rel="stylesheet">
+        <title>vélo'v</title>
+    </head>
+    <body>
+       
+                
+        <header >
+            
+            
+            <h1>Vélo'v <i class="fas fa-bicycle"></i></h1>
+            <p class="bienvenue">Le meilleure moyen de se déplacer à Lyon est de se déplacer en vélo,<br/>
+            et voici comment faire pour en avoir un...</p>
+        
+        </header>    
+            
+        <section id="diaporama">  
+            
+            <figure id="one">
+                
+                <div class="supLeftTriangle"></div>
+                <div class="supRightTriangle"></div>
+                <div class="infRightTriangle"></div>
+                <div class="infLeftTriangle"></div>
+                
+                <img class="imgDeDiapo1" src="images/slide1.PNG" alt=""/>
+                <hr class="hr1"/>
+                <figcaption>
+                    <p>
+                    Choisissez un groupement de stations.
+                    </p>
+                </figcaption>
+                
+            </figure>
+            
+             <figure id="two">
+                <div class="supLeftTriangle"></div>
+                <div class="supRightTriangle"></div>
+                <div class="infRightTriangle"></div>
+                <div class="infLeftTriangle"></div>
+                 
+                <img class="imgDeDiapo2" src="images/slide2.PNG" alt=""/>
+                 <hr class="hr2" />
+                <figcaption>
+                    <p>
+                    Cliquez sur un des marqueurs.<br>
+                    </p>
+                 </figcaption>
+                 
+            </figure>           
+            
+             <figure id="three">
+                 
+                <div class="supLeftTriangle"></div>
+                <div class="supRightTriangle"></div>
+                <div class="infRightTriangle"></div>
+                <div class="infLeftTriangle"></div>
+                 
+                <img class="imgDeDiapo3" src="images/slide3.PNG" alt=""/>
+                 <hr class="hr3"/>
+                <figcaption>
+                    <p>
+                    Cliquez sur réserver.
+                    </p>
+                 </figcaption>
+                 
+            </figure>            
+            
+              <figure id="four">
+                <div class="supLeftTriangle"></div>
+                <div class="supRightTriangle"></div>
+                <div class="infRightTriangle"></div>
+                <div class="infLeftTriangle"></div>
+                  
+                  
+                <img class="imgDeDiapo4" src="images/slide4.PNG" alt=""/>
+                  <hr class="hr4"/>
+                <figcaption>
+                    <p>
+                  Signez puis réserver,<br>
+                  Vous avez 20 min pour le récupérer.<br>
+                    </p>
+                  </figcaption>
+                  
+            </figure>           
+            
+            
+            <button id="leftButton">
+                <i class="fas fa-arrow-circle-left fa-3x"></i> 
+            </button>
+            
+            <button id="rightButton">
+                <i class="fas fa-arrow-circle-right fa-3x"></i> 
+            </button>
+            
+            </section>  
+            
+        
+        <section id="resevartion" >
+            <div id="map"></div>
+            <div id="reservationCard">
+                <p id="indicateur">Etats de la station choisie
+                  <img id="indicateurImage" src="images/mapPointer.png" alt="ceci est un map pointer"/>  
+                </p>
+                
+                <h2 id="name" class="all"></h2>
+                <ul>
+                    <li id="status" class="stationText all"></li>
+                    <li id="adress" class="stationText all"></li>
+                    <li id="availableBikes" class="stationText twice"></li>
+                    <li id="availableBikeStands" class="stationText twice"></li>
+                    <li id="banking" class="stationText twice"></li>
+                </ul>
+                
+                <button id="reserve">Réserver</button>
+                
+                <p id="signBefore" class="third">Signez puis réservez.</p>
+
+                <canvas id="canvas" width="300" height="150" class="third"></canvas>
+                    
+                <button id="clear" class="third">Effacer</button>
+                
+                <button id="reserveTheBike">Réservez le vélo</button>
+
+            </div>
+        </section>
+            
+            <footer>
+                <h2 id="reservationStatus">Etat de la réservation</h2>
+               <p id="reservationStatus1">Aucune réservation en cours</p>
+               <p id="reservationStatus2"></p>
+               <button id="cancel">Annuler</button>    
+                <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+                <script src="js/velovSlider.js"></script>
+                
+                <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+                
+                <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script> 
+                
+                <script src="js/bikeReservationPOO.js"></script>
+                
+          <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfZCkLfcfWQm-PnWcGdbLy6dqa7Bu8Xj4&callback=bikeSystem.init">
+    </script>    
+                
+                
+    
+        <script src="js/reservationCard.js"></script>
+       
+        
+                
+           
+                
+                
+            </footer>
+            
+        
+        
+        
+    </body>
+</html>
